@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-mono {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  @apply flex flex-col min-h-dvh text-[#4C4C4C];
+}
+
+b {
+  @apply font-semibold;
+}
+
+h1 {
+  @apply text-xl;
+}
+
+textarea {
+  @apply resize-none;
+}
+input,
+textarea,
+form {
+  @apply outline-none w-full;
+}
+
+.wrapper {
+  @apply max-w-md w-full mx-auto;
+}
+
+.page {
+  @apply wrapper flex flex-col min-h-dvh pt-3 pb-6;
+}
+
+.page-header {
+  @apply h-[40px] mb-4 w-full flex justify-between items-center gap-2;
+}
+
+.btn {
+  @apply h-[40px] min-w-14 px-3.5 flex gap-2 items-center justify-center rounded-2xl select-none;
+}
+
+.parent-row {
+  @apply mb-5 w-full flex gap-3 items-center whitespace-nowrap font-medium text-lg;
+}
+
+.child-row {
+  @apply flex items-center gap-3 mb-5 ml-2 text-lg;
+}
+
+.actions-row {
+  @apply flex items-center gap-2;
+}
